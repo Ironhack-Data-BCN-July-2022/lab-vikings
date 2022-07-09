@@ -97,9 +97,9 @@ class War:
         return random_viking.receiveDamage(random_saxon.attack())
         
     def showStatus(self):
-        if len(self.saxonArmy)==0:
+        if len(self.saxonArmy)<=0:
             return "Vikings have won the war of the century!"
-        if len(self.vikingArmy)==0:
+        if len(self.vikingArmy)<=0:
             return "Saxons have fought for their lives and survived another day..."
         if len(self.saxonArmy) >0 and len(self.vikingArmy) >0:
             return "Vikings and Saxons are still in the thick of battle."
